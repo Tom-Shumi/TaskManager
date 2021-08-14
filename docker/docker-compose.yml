@@ -26,7 +26,7 @@ services:
             - "8080:8080"
         working_dir: /app
         volumes:
-            - "./shumipro_api:/app"
+            - "./shumipro_api/build/libs:/app"
         environment:
             SPRING_PROFILES_ACTIVE: docker
             DB_USERNAME: $DB_USERNAME
