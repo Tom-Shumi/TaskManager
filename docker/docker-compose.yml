@@ -14,6 +14,7 @@ services:
             - "5432:5432"
         volumes:
             - "./postgres/init:/data/postgresql"
+            - "./postgres/data:/var/lib/postgresql/data"
         environment:
             POSTGRES_USER: $DB_USERNAME
             POSTGRES_PASSWORD: $DB_PASSWORD
@@ -51,6 +52,7 @@ services:
         ports:
             - 80:80
             - 443:443
+            - 18080:18080
         volumes:
             - ./shumipro_front/out:/var/www/html
             - ./nginx:/etc/nginx/conf.d
