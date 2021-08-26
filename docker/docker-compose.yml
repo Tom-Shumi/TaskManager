@@ -34,6 +34,7 @@ services:
             DB_PASSWORD: $DB_PASSWORD
             FRONT_ORIGIN: $FRONT_ORIGIN
             API_TOKEN_SECRET_KEY: $API_TOKEN_SECRET_KEY
+            TZ: Asia/Tokyo
         command: ["java", "-jar", "shumipro_api-0.0.1-SNAPSHOT.war"]
 
     shumipro_front:
