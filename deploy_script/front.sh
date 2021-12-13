@@ -1,3 +1,6 @@
 #!/bin/sh
 
-touch /home/app_admin/app/text.text
+cd /home/app_admin/app/shumipro/docker/shumipro_front
+git fetch
+git merge origin master
+# gradle build
