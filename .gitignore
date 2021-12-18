@@ -47,4 +47,4 @@ out/
 /docker/shumipro_front
 /docker/shumipro_api
 /docker/local_env/es-data
-/docker/letsencrypt/live
+/docker/letsencrypt/
